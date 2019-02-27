@@ -1,3 +1,5 @@
+[TOC]
+
 ## Redis 入门
 
 ### Redis 常用数据类型
@@ -16,12 +18,15 @@ string
 list
 * 普通双向链表
 * 压缩链表
+
 set
 * dict
 * intset
+
 sorted set
 * skiplist
 * ziplist
+
 hash table
 * dict
 * ziplist
