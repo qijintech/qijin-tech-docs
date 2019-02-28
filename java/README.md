@@ -1,21 +1,44 @@
 
+[TOC]
 
 JavaDoc
 
 ## Java基础
 
-### 基础
-**基本数据类型**
-String不可变
-intern
+### 基本概念
+#### 数据类型
 
+**基本类型**
+int, short, long, boolean, char, String
 
-**内部类**
+**包装类型**
+Integer, Short, Long, Boolean
 
-**接口**
-空接口
+* [10个有关String的面试问题](http://www.importnew.com/9622.html)
+    >注意String是不可变的，比较一定要用`equals()`方法
+* [JAVA 中的 StringBuilder 和 StringBuffer 适用的场景是什么？](https://www.zhihu.com/question/20101840)
+    >事实上，很少情况下会用到线程安全的`StringBuffer`
+* [深入解析String#intern](https://tech.meituan.com/2014/03/06/in-depth-understanding-string-intern.html)
+* [Java常量池详解之一道比较蛋疼的面试题](https://www.cnblogs.com/DreamSea/archive/2011/11/20/2256396.html)
+    > Integer的比较要用`equals()`方法，而不能用`==`。
 
+#### 内部类
 
+* [java提高篇(八)----详解内部类](https://www.cnblogs.com/chenssy/p/3388487.html)
+
+#### 接口/抽象类
+
+设计模式建议我们面向接口编程。接口和抽象类也是在框架中经常见到的。
+
+* [java提高篇(五)-----抽象类与接口](https://www.cnblogs.com/chenssy/p/3376708.html)
+* [Java 中的接口有什么作用？](https://www.zhihu.com/question/20111251)
+
+空接口，也就是标签接口。接口中虽然没有任何方法，但也是有意义的。如`Serializable`、`EventListener`等
+
+* [Tag or marker interfaces in Java](https://beginnersbook.com/2016/03/tag-or-marker-interfaces-in-java/)
+* [Tagging Interfaces in Java](https://stackoverflow.com/questions/1293152/tagging-interfaces-in-java)
+
+>go语言中也有空接口 [11.9 空接口](https://www.kancloud.cn/kancloud/the-way-to-go/72528)
 
 
 ### 集合
@@ -97,15 +120,30 @@ intern
     >延迟队列
 
 **参考**
-* [Java Queue](...)
+* [Java Queue](https://www.jianshu.com/p/efe9052c7ad9)
 * [精巧好用的DelayQueue](https://www.cnblogs.com/jobs/archive/2007/04/27/730255.html)
 * [深入 DelayQueue 内部实现](https://www.zybuluo.com/mikumikulch/note/712598)
 
 ### 动态代理
 
+动态代理不仅有JDK自带的，还有第三方的，如CGLIB。需要知道原理和其不同。
+
+动态代理在Spring框架中有非常广泛的应用
+
+* [Java 动态代理作用是什么？](https://www.zhihu.com/question/20794107)
+* [Java Proxy 和 CGLIB 动态代理原理](https://mp.weixin.qq.com/s/caEpFhjE6FnnvoGMCQpU0g)
+
+
 ### 反射
 
+* [Java 反射机制应用实践](https://mp.weixin.qq.com/s/DuPaNtPWWNfhP-LP-oJO8A)
+* [关于反射调用方法的一个log](https://rednaxelafx.iteye.com/blog/548536?from=singlemessage&isappinstalled=0)
+
 ### 泛型
+PECS原则
+类型擦除
+
+* [Java 泛型详解](https://mp.weixin.qq.com/s/HuSBGkJzBegwW-O0Scum7Q)
 
 ### Java IO
 
