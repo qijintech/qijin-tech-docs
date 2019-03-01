@@ -8,10 +8,12 @@ JavaDoc
 ### 基本概念
 #### 数据类型
 
-**基本类型**
+基本类型
+
 int, short, long, boolean, char, String
 
-**包装类型**
+包装类型
+
 Integer, Short, Long, Boolean
 
 * [10个有关String的面试问题](http://www.importnew.com/9622.html)
